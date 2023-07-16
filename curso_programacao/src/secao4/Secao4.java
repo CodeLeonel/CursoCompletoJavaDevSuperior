@@ -3,19 +3,17 @@ package secao4;
 import java.util.Locale;
 import java.util.Scanner;
 
+import util.Entrada;
+import util.Imprime;
+
 public class Secao4 {
 
-	private static void imprime(String linha) {
-		System.out.println();
-		System.out.println(linha);
-		System.out.println();
-	}
-	
-	private static void exercicio0(String linha) {
+
+	private static void exercicio0() {
 		
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 00: ");
+		Imprime.exercicio(0);
 		
 		String product1 = "Computer";
 		String product2 = "Office desk";
@@ -41,32 +39,32 @@ public class Secao4 {
 		
 		System.out.printf("US deimal point: %.3f%n", measure);
 		
-		imprime(linha);
+		Imprime.linha();
 		
 	}
 	
-	private static Scanner exercicio01(String linha, Scanner scan) {
+	private static Scanner exercicio01(Scanner scan) {
 		
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 01: ");
+		Imprime.exercicio(1);
 		
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		
 		System.out.println("SOMA = " + (a + b));
 		
-		imprime(linha);
+		Imprime.linha();
 		
 		return scan;
 		
 	}
 	
-	private static Scanner exercicio02(String linha, Scanner scan) {
+	private static Scanner exercicio02(Scanner scan) {
 		
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 02: ");
+		Imprime.exercicio(2);
 			
 		scan.nextLine();
 		
@@ -76,17 +74,17 @@ public class Secao4 {
 		
 		System.out.printf("A=%.4f",area);
 		
-		imprime(linha);
+		Imprime.linha();
 		
 		return scan;
 		
 	}
 	
-	private static Scanner exercicio03(String linha, Scanner scan) {
+	private static Scanner exercicio03(Scanner scan) {
 		
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 03: ");
+		Imprime.exercicio(3);
 		
 		int a, b, c, d;
 		
@@ -97,17 +95,17 @@ public class Secao4 {
 
 		System.out.println("DIFERENÇA = " + (a * b - c * d));
 		
-		imprime(linha);
+		Imprime.linha();
 		
 		return scan;
 		
 	}
 	
-	private static Scanner exercicio04(String linha, Scanner scan) {
+	private static Scanner exercicio04(Scanner scan) {
 	
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 04: ");
+		Imprime.exercicio(4);
 		
 		int a, b;
 		double c;
@@ -119,17 +117,17 @@ public class Secao4 {
 		System.out.println("NUMBER = " + a);
 		System.out.println("SALARY = U$ " + (b * c));
 		
-		imprime(linha);
+		Imprime.linha();
 		
 		return scan;
 		
 	}
 	
-	private static Scanner exercicio05(String linha, Scanner scan) {
+	private static void exercicio05(Scanner scan) {
 		
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 05: ");
+		Imprime.exercicio(5);
 		
 		int a,d;
 		double b,c,e,f;
@@ -146,17 +144,16 @@ public class Secao4 {
 		
 		System.out.printf("VALOR A PAGAR: %.2f R$ %n", (b * c + e * f));
 		
-		imprime(linha);
+		Imprime.linha();
 		
-		return scan;
 		
 	}
 	
-	private static Scanner exercicio06(String linha, Scanner scan) {
+	private static void exercicio06(Scanner scan) {
 	
-		imprime(linha);
+		Imprime.linha();
 		
-		System.out.println("Exercício 06: ");
+		Imprime.exercicio(6);
 		// Triangulo retanculo A = b*h/2
 		// Circulo pi * raio^2
 		// Trapezio ((a + b) / 2) * c
@@ -173,34 +170,28 @@ public class Secao4 {
 		System.out.printf("QUADRADO: %.3f%n", Math.pow(b, 2));
 		System.out.printf("RETANGULO: %.3f%n", a * b);
 		
+		Imprime.linha();
 		
-		System.out.println("Exercício 06: ");
-		
-		imprime(linha);
-		
-		return scan;
 		
 	}
 	
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-
-		String linha = "=".repeat(75);
 		
 		Locale.setDefault(Locale.US);
 		
-		Scanner scan = new Scanner(System.in);
-		
-		exercicio0(linha);
+		exercicio0();
 
-		scan = exercicio01(linha,scan);
-		scan = exercicio02(linha,scan);
-		scan = exercicio03(linha,scan);
-		scan = exercicio04(linha,scan);
-		scan = exercicio05(linha,scan);
-		scan = exercicio06(linha,scan);
+		Scanner scan = Entrada.inicioScanner();
 		
-		scan.close();
+		exercicio01(scan);
+		exercicio02(scan);
+		exercicio03(scan);
+		exercicio04(scan);
+		exercicio05(scan);
+		exercicio06(scan);
+		
+		Entrada.fimScanner();
+		
 		
 	}
 
