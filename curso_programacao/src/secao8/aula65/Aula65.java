@@ -1,14 +1,14 @@
-package secao8.aula64;
+package secao8.aula65;
 
 import java.util.Locale;
 import java.util.Scanner;
 
 import secao8.entities.Triangle;
 
-public class Aula64 {
+public class Aula65 {
 
 	public static void main(String[] args) {
-	
+		
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
 		
@@ -27,11 +27,8 @@ public class Aula64 {
 		y.b = scan.nextDouble();
 		y.c = scan.nextDouble();
 		
-		double p = (x.a + x.b + x.c) / 2.0;
-		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-		p = (y.a + y.b + y.c) / 2.0;
-		double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+		double areaX = x.area();
+		double areaY = y.area();
 		
 		System.out.printf("Triangle X area: %.4f%n", areaX);
 		System.out.printf("Triangle X area: %.4f%n", areaY);
