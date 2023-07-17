@@ -1,14 +1,14 @@
-package secao8.aula66;
+package secao8.aula67;
 
 import java.util.Locale;
 import java.util.Scanner;
 
 import secao8.entities.Product;
 
-public class Aula66 {
+public class Aula67 {
 
 	public static void main(String[] args) {
-
+		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
@@ -22,10 +22,9 @@ public class Aula66 {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+		System.out.println(product);
 		
 		sc.close();
-		
 		
 	}
 
