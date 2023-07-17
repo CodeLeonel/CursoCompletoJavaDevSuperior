@@ -5,7 +5,7 @@ import java.util.Scanner;
 import section9.entities.Product;
 import util.Entry;
 
-public class Lession75 {
+public class Lession77 {
 
 	public static void main(String[] args) {
 
@@ -16,16 +16,14 @@ public class Lession75 {
 		String name = sc.nextLine();
 		System.out.print("Price: ");
 		double price = sc.nextDouble();
-		System.out.print("Quantity in stock: ");
-		int quantity = sc.nextInt();
-
-		Product product = new Product(name,price,quantity);
+		
+		Product product = new Product(name,price);
 
 		System.out.println("Product data: " + product);
 		
 		System.out.println();
 		System.out.print("Enter the number of product to be added in stock: ");
-		quantity = sc.nextInt();
+		int quantity = sc.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
