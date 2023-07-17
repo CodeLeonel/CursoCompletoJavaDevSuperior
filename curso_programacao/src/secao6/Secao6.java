@@ -2,16 +2,16 @@ package secao6;
 
 import java.util.Scanner;
 
-import util.Entrada;
-import util.Imprime;
+import util.Entry;
+import util.Print;
 
 public class Secao6 {
 
 	private static void exercicio01(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(1);
+		Print.exercise(1);
 		
 		int senha = scan.nextInt();
 		
@@ -22,15 +22,15 @@ public class Secao6 {
 		
 		System.out.println("Acesso Permitido");
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static void exercicio02(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(2);
+		Print.exercise(2);
 		
 		int x = scan.nextInt();
 		int y = scan.nextInt();
@@ -55,15 +55,15 @@ public class Secao6 {
 			
 		}
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static void exercicio03(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(3);
+		Print.exercise(3);
 		
 		int opcao = scan.nextInt();
 		
@@ -96,15 +96,15 @@ public class Secao6 {
 		System.out.println("Gasolina: " + gasolina);
 		System.out.println("Diesel: " + diesel);
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static void exercicio04(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(4);
+		Print.exercise(4);
 		
 		int x = scan.nextInt();
 		
@@ -118,15 +118,15 @@ public class Secao6 {
 			}
 		}
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static void exercicio05(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(5);
+		Print.exercise(5);
 		
 		int n = scan.nextInt();
 		
@@ -147,14 +147,14 @@ public class Secao6 {
 		System.out.println(in + " in");
 		System.out.println(out + " out");
 		
-		Imprime.linha();
+		Print.line();
 	}
 	
 	private static void exercicio06(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(6);
+		Print.exercise(6);
 		
 		int n = scan.nextInt();
 		
@@ -172,15 +172,15 @@ public class Secao6 {
 			
 		}
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static void exercicio07(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(7);
+		Print.exercise(7);
 		
 		int n = scan.nextInt();
 		double a = 0.0, b = 0.0;
@@ -205,15 +205,15 @@ public class Secao6 {
 			
 		}
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static void exercicio08(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(8);
+		Print.exercise(8);
 		
 		int n = scan.nextInt();
 		int resultado = 0;
@@ -238,14 +238,14 @@ public class Secao6 {
 				
 		System.out.println(resultado);
 		
-		Imprime.linha();
+		Print.line();
 	}
 	
 	private static void exercicio09(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(9);
+		Print.exercise(9);
 		
 		int n = scan.nextInt();
 		
@@ -257,14 +257,14 @@ public class Secao6 {
 			
 		}
 		
-		Imprime.linha();
+		Print.line();
 	}
 	
 	private static void exercicio10(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(9);
+		Print.exercise(9);
 		
 		int n = scan.nextInt();
 		int j = 0, k = 0;
@@ -277,12 +277,12 @@ public class Secao6 {
 			System.out.printf("%d %d %d %n",i,j,k);
 		}
 		
-		Imprime.linha();
+		Print.line();
 	}
 	
 	public static void main(String[] args) {
 	
-		Scanner scan = Entrada.inicioScanner();
+		Scanner scan = Entry.startScanner();
 		
 		exercicio01(scan);
 		exercicio02(scan);
@@ -295,7 +295,7 @@ public class Secao6 {
 		exercicio09(scan);
 		exercicio10(scan);
 		
-		Entrada.fimScanner();
+		Entry.closeScanner();
 		
 	}
 

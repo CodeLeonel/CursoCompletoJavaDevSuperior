@@ -2,16 +2,16 @@ package secao5;
 
 import java.util.Scanner;
 
-import util.Entrada;
-import util.Imprime;
+import util.Entry;
+import util.Print;
 
 public class Secao5 {
 
 	private static void exercicio01(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(1);
+		Print.exercise(1);
 
 		int a = scan.nextInt();
 
@@ -21,15 +21,15 @@ public class Secao5 {
 			System.out.println("NEGATIVO");
 		}
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio02(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(2);
+		Print.exercise(2);
 
 		int a = scan.nextInt();
 
@@ -39,15 +39,15 @@ public class Secao5 {
 			System.out.println("IMPAR");
 		}
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio03(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(3);
+		Print.exercise(3);
 
 		int a, b, min, max;
 
@@ -68,15 +68,15 @@ public class Secao5 {
 			System.out.println("Nao sao Multiplos");
 		}
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio04(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(4);
+		Print.exercise(4);
 
 		int duracao;
 
@@ -91,15 +91,15 @@ public class Secao5 {
 
 		System.out.println("O JOGO DUROU " + duracao + " HORA(S)");
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio05(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(5);
+		Print.exercise(5);
 
 		int codigo;
 		int quantidade;
@@ -124,15 +124,15 @@ public class Secao5 {
 
 		System.out.printf("Total: R$ %.2f", preco);
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio06(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(6);
+		Print.exercise(6);
 
 		double valor = scan.nextDouble();
 
@@ -148,15 +148,15 @@ public class Secao5 {
 			System.out.println("Fora do intervalo");
 		}
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio07(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(7);
+		Print.exercise(7);
 
 		double x = scan.nextDouble();
 		double y = scan.nextDouble();
@@ -177,15 +177,15 @@ public class Secao5 {
 
 		System.out.println(quadrante);
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	private static void exercicio08(Scanner scan) {
 
-		Imprime.linha();
+		Print.line();
 
-		Imprime.exercicio(8);
+		Print.exercise(8);
 
 		boolean isento = false;
 		double salario = scan.nextDouble();
@@ -261,13 +261,13 @@ public class Secao5 {
 			System.out.printf("R$ %.2f", imposto);
 		}
 
-		Imprime.linha();
+		Print.line();
 
 	}
 
 	public static void main(String[] args) {
 
-		Scanner scan = Entrada.inicioScanner();
+		Scanner scan = Entry.startScanner();
 
 		exercicio01(scan);
 		exercicio02(scan);
@@ -278,7 +278,7 @@ public class Secao5 {
 		exercicio07(scan);
 		exercicio08(scan);
 
-		Entrada.fimScanner();
+		Entry.closeScanner();
 
 	}
 

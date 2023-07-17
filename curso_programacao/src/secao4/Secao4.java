@@ -3,17 +3,17 @@ package secao4;
 import java.util.Locale;
 import java.util.Scanner;
 
-import util.Entrada;
-import util.Imprime;
+import util.Entry;
+import util.Print;
 
 public class Secao4 {
 
 
 	private static void exercicio0() {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(0);
+		Print.exercise(0);
 		
 		String product1 = "Computer";
 		String product2 = "Office desk";
@@ -39,22 +39,22 @@ public class Secao4 {
 		
 		System.out.printf("US deimal point: %.3f%n", measure);
 		
-		Imprime.linha();
+		Print.line();
 		
 	}
 	
 	private static Scanner exercicio01(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(1);
+		Print.exercise(1);
 		
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		
 		System.out.println("SOMA = " + (a + b));
 		
-		Imprime.linha();
+		Print.line();
 		
 		return scan;
 		
@@ -62,9 +62,9 @@ public class Secao4 {
 	
 	private static Scanner exercicio02(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(2);
+		Print.exercise(2);
 			
 		scan.nextLine();
 		
@@ -74,7 +74,7 @@ public class Secao4 {
 		
 		System.out.printf("A=%.4f",area);
 		
-		Imprime.linha();
+		Print.line();
 		
 		return scan;
 		
@@ -82,9 +82,9 @@ public class Secao4 {
 	
 	private static Scanner exercicio03(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(3);
+		Print.exercise(3);
 		
 		int a, b, c, d;
 		
@@ -95,7 +95,7 @@ public class Secao4 {
 
 		System.out.println("DIFERENÇA = " + (a * b - c * d));
 		
-		Imprime.linha();
+		Print.line();
 		
 		return scan;
 		
@@ -103,9 +103,9 @@ public class Secao4 {
 	
 	private static Scanner exercicio04(Scanner scan) {
 	
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(4);
+		Print.exercise(4);
 		
 		int a, b;
 		double c;
@@ -117,7 +117,7 @@ public class Secao4 {
 		System.out.println("NUMBER = " + a);
 		System.out.println("SALARY = U$ " + (b * c));
 		
-		Imprime.linha();
+		Print.line();
 		
 		return scan;
 		
@@ -125,9 +125,9 @@ public class Secao4 {
 	
 	private static void exercicio05(Scanner scan) {
 		
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(5);
+		Print.exercise(5);
 		
 		int a,d;
 		double b,c,e,f;
@@ -144,16 +144,16 @@ public class Secao4 {
 		
 		System.out.printf("VALOR A PAGAR: %.2f R$ %n", (b * c + e * f));
 		
-		Imprime.linha();
+		Print.line();
 		
 		
 	}
 	
 	private static void exercicio06(Scanner scan) {
 	
-		Imprime.linha();
+		Print.line();
 		
-		Imprime.exercicio(6);
+		Print.exercise(6);
 		// Triangulo retanculo A = b*h/2
 		// Circulo pi * raio^2
 		// Trapezio ((a + b) / 2) * c
@@ -170,7 +170,7 @@ public class Secao4 {
 		System.out.printf("QUADRADO: %.3f%n", Math.pow(b, 2));
 		System.out.printf("RETANGULO: %.3f%n", a * b);
 		
-		Imprime.linha();
+		Print.line();
 		
 		
 	}
@@ -181,7 +181,7 @@ public class Secao4 {
 		
 		exercicio0();
 
-		Scanner scan = Entrada.inicioScanner();
+		Scanner scan = Entry.startScanner();
 		
 		exercicio01(scan);
 		exercicio02(scan);
@@ -190,7 +190,7 @@ public class Secao4 {
 		exercicio05(scan);
 		exercicio06(scan);
 		
-		Entrada.fimScanner();
+		Entry.closeScanner();
 		
 		
 	}

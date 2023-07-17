@@ -3,11 +3,11 @@ package util;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Entrada {
+public class Entry {
 
 	private static Scanner scan;
 
-	public static Scanner inicioScanner() {
+	public static Scanner startScanner() {
 
 		Locale.setDefault(Locale.US);
 
@@ -17,7 +17,7 @@ public class Entrada {
 
 	}
 
-	public static void fimScanner() {
+	public static void closeScanner() {
 
 		scan.close();
 
