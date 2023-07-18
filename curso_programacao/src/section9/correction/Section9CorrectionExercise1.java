@@ -10,7 +10,7 @@ public class Section9CorrectionExercise1 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		Account account;
-
+   
 		System.out.print("Enter account number: ");
 		int number = sc.nextInt();
 		System.out.print("Enter account holder: ");
