@@ -23,7 +23,7 @@ public class Section10Exercise1 {
 		
 		for(int i = 0; i < numbers.length; i++) {
 			
-			System.out.println("Type one number: ");
+			System.out.print("Type one number: ");
 			numbers[i] = scan.nextInt();
 			
 		}
