@@ -1,12 +1,12 @@
 package section10.exercises.challenges.entities;
 
-public class Room {
+public class Rent {
 
 	private String name;
 	
 	private String email;
 
-	public Room(String name, String email) {
+	public Rent(String name, String email) {
 		this.name = name;
 		this.email = email;
 	}
