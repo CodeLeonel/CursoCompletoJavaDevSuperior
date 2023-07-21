@@ -38,6 +38,8 @@ public class Section10Challenge1 {
 			}
 		}
 		
+		Entry.closeScanner();
+		
 	}
 
 }

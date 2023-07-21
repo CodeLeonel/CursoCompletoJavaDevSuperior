@@ -37,7 +37,7 @@ public class Section10Exercise8 {
 			System.out.println("NO EVEN NUMBER");
 		}
 		
-		
+		Entry.closeScanner();
 	}
 
 }

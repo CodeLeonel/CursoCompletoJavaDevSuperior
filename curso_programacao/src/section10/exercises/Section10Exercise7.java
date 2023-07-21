@@ -34,6 +34,8 @@ public class Section10Exercise7 {
 			}
 		}
 		
+		Entry.closeScanner();
+		
 	}
 
 }

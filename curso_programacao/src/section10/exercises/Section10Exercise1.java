@@ -38,6 +38,8 @@ public class Section10Exercise1 {
 			
 		}
 		
+		Entry.closeScanner();
+		
 	}
 
 }

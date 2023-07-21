@@ -52,6 +52,7 @@ public class Section10Exercise11 {
 		System.out.printf("Average height of women = %.2f%n",sumHeightF/(double)sumF);
 		System.out.println("Number of men = " + sumM);
 		
+		Entry.closeScanner();
 		
 	}
 

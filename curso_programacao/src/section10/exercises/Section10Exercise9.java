@@ -34,6 +34,8 @@ public class Section10Exercise9 {
 		}
 		
 		System.out.printf("OLDER PERSON: %s",names[indexHigestAge]);
+		
+		Entry.closeScanner();
 	}
 
 }
