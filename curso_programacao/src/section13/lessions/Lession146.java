@@ -2,8 +2,8 @@ package section13.lessions;
 
 import java.util.Date;
 
-import section13.entities.Order;
-import section13.entities.enums.OrderStatus;
+import section13.lessions.entities.Order;
+import section13.lessions.entities.enums.OrderStatus;
 
 public class Lession146 {
 

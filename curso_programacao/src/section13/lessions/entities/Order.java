@@ -1,8 +1,8 @@
-package section13.entities;
+package section13.lessions.entities;
 
 import java.util.Date;
 
-import section13.entities.enums.OrderStatus;
+import section13.lessions.entities.enums.OrderStatus;
 
 public class Order {
 
