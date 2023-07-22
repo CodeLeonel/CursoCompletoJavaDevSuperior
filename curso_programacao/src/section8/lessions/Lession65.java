@@ -1,11 +1,11 @@
-package secao8.aula65;
+package section8.lessions;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import secao8.entities.Triangle;
+import section8.entities.Triangle;
 
-public class Aula65 {
+public class Lession65 {
 
 	public static void main(String[] args) {
 		

@@ -1,4 +1,4 @@
-package secao8.entities;
+package section8.entities;
 
 public class Triangle {
 

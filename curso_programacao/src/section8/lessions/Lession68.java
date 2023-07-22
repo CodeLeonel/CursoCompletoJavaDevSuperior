@@ -1,11 +1,11 @@
-package secao8.aula68;
+package section8.lessions;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import secao8.entities.Product;
+import section8.entities.Product;
 
-public class Aula68 {
+public class Lession68 {
 
 	public static void main(String[] args) {
 

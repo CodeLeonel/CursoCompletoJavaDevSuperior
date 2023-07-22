@@ -1,11 +1,11 @@
-package secao5;
+package section5;
 
 import java.util.Scanner;
 
 import util.Entry;
 import util.Print;
 
-public class Secao5 {
+public class Section5 {
 
 	private static void exercicio01(Scanner scan) {
 

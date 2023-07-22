@@ -1,4 +1,4 @@
-package secao4;
+package section4;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 import util.Entry;
 import util.Print;
 
-public class Secao4 {
+public class Section4 {
 
 
 	private static void exercicio0() {

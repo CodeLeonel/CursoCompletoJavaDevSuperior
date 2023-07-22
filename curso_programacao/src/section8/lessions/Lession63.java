@@ -1,37 +1,32 @@
-package secao8.aula64;
+package section8.lessions;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import secao8.entities.Triangle;
-
-public class Aula64 {
+public class Lession63 {
 
 	public static void main(String[] args) {
-	
+
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
 		
-		Triangle x, y;
-		
-		x = new Triangle();
-		y = new Triangle();
+		double xA, xB, xC, yA, yB, yC;
 		
 		System.out.println("Enter the measures of triangle X: ");
-		x.a = scan.nextDouble();
-		x.b = scan.nextDouble();
-		x.c = scan.nextDouble();
+		xA = scan.nextDouble();
+		xB = scan.nextDouble();
+		xC = scan.nextDouble();
 		
 		System.out.println("Enter the measures of triangle Y: ");
-		y.a = scan.nextDouble();
-		y.b = scan.nextDouble();
-		y.c = scan.nextDouble();
+		yA = scan.nextDouble();
+		yB = scan.nextDouble();
+		yC = scan.nextDouble();
 		
-		double p = (x.a + x.b + x.c) / 2.0;
-		double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+		double p = (xA + xB + xC) / 2.0;
+		double areaX = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
 
-		p = (y.a + y.b + y.c) / 2.0;
-		double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+		p = (yA + yB + yC) / 2.0;
+		double areaY = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
 		
 		System.out.printf("Triangle X area: %.4f%n", areaX);
 		System.out.printf("Triangle X area: %.4f%n", areaY);
@@ -45,5 +40,5 @@ public class Aula64 {
 		scan.close();
 		
 	}
-	
+
 }
