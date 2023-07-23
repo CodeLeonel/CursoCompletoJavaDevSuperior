@@ -21,6 +21,12 @@ public class BusinessAccount extends Account {
 	
 	}
 	
+	@Override
+	public void withdraw(double amount) {
+		super.withdraw(amount);
+		balance -= 2.0;
+	}
+	
 	public Double getLoanLimit() {
 		return loanLimit;
 	}
