@@ -10,7 +10,7 @@ import section18.lessions.model.services.BrazilTaxService;
 import section18.lessions.model.services.RentalService;
 import util.Entry;
 
-public class Lession225To226 {
+public class Lession225To227 {
 
 	public static void main(String[] args) {
 
