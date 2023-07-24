@@ -5,14 +5,15 @@ import java.util.Date;
 import java.util.Scanner;
 
 import section15.lessions.model.entities.Reservation;
+import section15.lessions.model.exceptions.DomainException;
 import util.DateUtils;
 import util.Entry;
 
 public class Lession175 {
 
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, DomainException {
 		
-Scanner scan = Entry.startScanner();
+		Scanner scan = Entry.startScanner();
 		
 		System.out.print("Room number: ");
 		int number = scan.nextInt();
@@ -34,8 +35,8 @@ Scanner scan = Entry.startScanner();
 			System.out.print("Check-out date (dd/MM/yyyy): ");
 			checkOut = DateUtils.dateParse(scan.next());
 				
-			String error = reservation.updateDates(checkIn, checkOut);
-			
+		//	String error = reservation.updateDates(checkIn, checkOut);
+		/*	
 			if(error != null) {
 			
 				System.out.println("Error in reservation: " + error);
@@ -46,7 +47,7 @@ Scanner scan = Entry.startScanner();
 
 			}
 			
-			
+			*/
 		}
 		
 		Entry.closeScanner();

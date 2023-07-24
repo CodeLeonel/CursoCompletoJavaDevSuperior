@@ -5,12 +5,13 @@ import java.util.Date;
 import java.util.Scanner;
 
 import section15.lessions.model.entities.Reservation;
+import section15.lessions.model.exceptions.DomainException;
 import util.DateUtils;
 import util.Entry;
 
 public class Lession174 {
 
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, DomainException {
 
 		Scanner scan = Entry.startScanner();
 		
@@ -45,8 +46,8 @@ public class Lession174 {
 
 			} else {
 				
-				reservation.updateDates(checkIn, checkOut);
-				System.out.println("Reservation: " + reservation);
+			//	reservation.updateDates(checkIn, checkOut);
+			//	System.out.println("Reservation: " + reservation);
 			}
 			
 			
