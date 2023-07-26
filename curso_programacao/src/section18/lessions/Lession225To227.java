@@ -43,7 +43,7 @@ public class Lession225To227 {
 		System.out.println("Pagamento básico: " + String.format("%.2f", car.getInvoice().getBasicPayment()));
 		System.out.println("Imposto: " + String.format("%.2f",car.getInvoice().getTax()));
 		System.out.println("Pagamento total: " + String.format("%.2f",car.getInvoice().getTotalPayment()));
-		
+		Entry.closeScanner();
 	}
 
 }
