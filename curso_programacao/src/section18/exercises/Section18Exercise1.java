@@ -35,7 +35,7 @@ public class Section18Exercise1 {
 			
 			System.out.print("Entre com o numero de parcelas: ");
 			int months = scan.nextInt();
-			
+						
 			contractService.processContract(contract, months);
 			
 			System.out.println("Parcelas:");
