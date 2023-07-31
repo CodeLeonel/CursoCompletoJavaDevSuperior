@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 import db.DB;
 
-public class ProgramJDBC {
+public class JDBCInsert {
 
 	public static void main(String[] args) {
 		

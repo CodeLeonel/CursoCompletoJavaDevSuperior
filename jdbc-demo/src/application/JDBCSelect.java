@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 import db.DB;
 
-public class ProgramJDBC {
+public class JDBCSelect {
 
 	public static void main(String[] args) {
 		

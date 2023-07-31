@@ -7,7 +7,7 @@ import java.sql.Statement;
 import db.DB;
 import db.DbException;
 
-public class ProgramJDBC {
+public class JDBCTransition {
 
 	public static void main(String[] args) {
 		
