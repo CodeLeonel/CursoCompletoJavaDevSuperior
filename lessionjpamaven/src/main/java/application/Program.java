@@ -10,19 +10,21 @@ public class Program {
 
 	public static void main(String[] args) {
 
-		
-		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("sample-jpa");
 		EntityManager em = emf.createEntityManager();
 		
+		em.getTransaction().begin();
 		
 		Person p = em.find(Person.class, 2);
-
+		
+		em.remove(p);
 				
+		em.getTransaction().commit();
+		
 		em.close();
 		emf.close();
 		
-		System.out.println(p);
+		System.out.println("Ready!");
 		
 		
 	}
