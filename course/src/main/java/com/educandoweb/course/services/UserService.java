@@ -39,4 +39,18 @@ public class UserService {
 		
 	}
 	
+	public User update(Long id, User obj) {
+		
+		User entity = this.userRepository.getReferenceById(id);
+		updateData(entity,obj);
+		return this.userRepository.save(entity);
+		
+	}
+	
+	public void updateData(User entity, User obj) {
+		entity.setEmail(obj.getEmail());
+		entity.setName(obj.getName());
+		entity.setPhone(obj.getPhone());
+	}
+	
 }
