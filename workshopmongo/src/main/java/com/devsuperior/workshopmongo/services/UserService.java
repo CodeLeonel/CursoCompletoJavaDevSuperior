@@ -18,7 +18,7 @@ public class UserService {
 	
 	public List<UserDTO> findAll() {
 		
-		return this.userRepository.findAll().stream().map(u -> new UserDTO(u)).toList();
+		return this.userRepository.findAll().stream().map(u -> toDTO(u)).toList();
 		
 	}
 	
@@ -27,7 +27,28 @@ public class UserService {
 		User user = this.userRepository.findById(id)
 							.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado. Id: " + id));
 		
+		return toDTO(user);
+		
+	}
+	
+	public UserDTO insert(UserDTO userDTO) {
+		
+		User user  = this.userRepository.insert(fromDTO(userDTO));
+		
+		return toDTO(user);
+		
+	}
+	
+	public UserDTO toDTO(User user) {
+		
 		return new UserDTO(user);
+		
+	}
+	
+	public User fromDTO(UserDTO userDTO) {
+		
+		User user = new User(userDTO.getId(), userDTO.getName(), userDTO.getEmail());
+		return user;
 		
 	}
 	
