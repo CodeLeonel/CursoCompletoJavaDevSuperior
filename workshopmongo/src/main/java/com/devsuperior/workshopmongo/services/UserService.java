@@ -39,6 +39,14 @@ public class UserService {
 		
 	}
 	
+	public void delete(String id) {
+		
+		findById(id);
+		
+		this.userRepository.deleteById(id);
+		
+	}
+	
 	public UserDTO toDTO(User user) {
 		
 		return new UserDTO(user);
