@@ -47,6 +47,28 @@ public class UserService {
 		
 	}
 	
+	public UserDTO update(UserDTO userDTO) {
+		
+		User valuesToUpdt = fromDTO(userDTO);
+		
+		User newUser = this.userRepository.findById(valuesToUpdt.getId())
+												.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado. Id: " + valuesToUpdt.getId()));
+		
+		updateData(newUser, valuesToUpdt);
+		
+		User userUpdated = this.userRepository.save(newUser);
+		
+		return toDTO(userUpdated);
+		
+	}
+	
+	private void updateData(User newUser, User valuesToUpdt) {
+		
+		newUser.setName(valuesToUpdt.getName());
+		newUser.setEmail(valuesToUpdt.getEmail());
+		
+	}
+
 	public UserDTO toDTO(User user) {
 		
 		return new UserDTO(user);
