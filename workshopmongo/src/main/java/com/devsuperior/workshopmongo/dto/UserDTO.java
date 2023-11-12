@@ -1,7 +1,11 @@
 package com.devsuperior.workshopmongo.dto;
 
 import java.io.Serializable;
+import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.DBRef;
+
+import com.devsuperior.workshopmongo.domain.Post;
 import com.devsuperior.workshopmongo.domain.User;
 
 public class UserDTO implements Serializable {
